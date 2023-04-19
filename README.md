@@ -1,5 +1,7 @@
 # simple RoadMap
 
+[Lecture Video recording]()
+
 - components
 - JSX
 - Props
@@ -17,7 +19,7 @@
 - How Components Render
 - Hosting
 
-(detailed Roadmap)[!]
+[Detailed Roadmap](https://roadmap.sh/react)
 
 
 

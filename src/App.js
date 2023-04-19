@@ -1,25 +1,43 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import BookList from './BookList';
+import AddBook from './AddBook'
+import initailbooks from './data/books';
+import { useState } from 'react';
 
 function App() {
+  const [books,setBooks]=useState(initailbooks)
+  // console.log(books)
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<>
+<Header />
+<BookList books={books} />
+<AddBook />
+</>
   );
 }
+/*
+components
+JSX
+Props
+State
+events
+Hooks-> useState/useEffect, useRef, ....
+Context
+SateManagement/ complex State
+React Router
+Advanced Hooks
+Class Components
+---------------------
+Virtual DOM
+How Components Render
+
+90%
+Hosting
+
+*/
+
 
 export default App;

@@ -15,10 +15,10 @@ function BookItem({cover, price,title,quantity,sold,subtitle,published,publisher
             <button onClick={toggleDescription}>{toggle?'show Less':'show More'}</button>
             {toggle?(<details>
                 <summary>
-                    {author}
-                    {description}
-                    {published}
-                    {publisher}
+                   <p>{author} </p> 
+                    <p>{description}</p> 
+                    <p>{published}</p>
+                    <p>{publisher}</p> 
                 </summary>
             </details>):null}
         </div>
